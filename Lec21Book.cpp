@@ -68,7 +68,7 @@ bool isValid(vector<int> &arr,int n,int m,int maxAllocated){
             pages=arr[i];
         }
     }
-   return students>m?false:true;
+   return students<=m;
 
 }
 
