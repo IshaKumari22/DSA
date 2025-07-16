@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include<algorithm>
+// #include<algorithm>
 using namespace std;
 bool minTimeToPaint(vector<int> &arr,int n,int m,int maxAllowedTime){
          int painter=1;int time=0;
@@ -21,7 +21,7 @@ bool minTimeToPaint(vector<int> &arr,int n,int m,int maxAllowedTime){
 }
 int PainterPartition(vector<int> &arr,int n,int m){
     int sum=0,maxVal=INT16_MIN;
-    sort(arr.begin(),arr.end());   
+    // sort(arr.begin(),arr.end());   
     for(int i=0;i<n;i++){
         sum+=arr[i];
         maxVal=max(maxVal,arr[i]);
